@@ -1,0 +1,57 @@
+samp {
+    font-family: "font-family you want to use";
+}
+* {
+    font-family: 'YouYuan';
+}
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+        font-size: 10vh;
+        font-family: '华文行楷';
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    outline: none; 
+    border-color: transparent;
+    box-shadow:none;
+}
+
+section {
+    padding: 5%;
+    padding-top: 0;
+    height: 100vh;
+}
+
+.side {
+    margin-left: 0;
+}
+
+button {
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    background-color: #fec8d8 !important;
+}
+
+textarea {
+    padding: 3%;
+    border-width: thick;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+}
+
+.inputset {
+    background-image: "./image/300.jpg";
+    text-shadow: #888888;
+}
