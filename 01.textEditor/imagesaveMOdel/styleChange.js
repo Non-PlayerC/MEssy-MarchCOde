@@ -1,58 +1,27 @@
-function f1() {
-    //function to make the text bold using DOM method
-    document.getElementById("textarea1").style.fontWeight = "bold";
+var editor = document.getElementById('editor');
+
+function changeFontStyle(fontFamily) {
+    editor.style.fontFamily = fontFamily;
 }
 
-function f2() {
-    //function to make the text italic using DOM method
-    document.getElementById("textarea1").style.fontStyle = "italic";
+function changeFontSize(fontSize) {
+    editor.style.fontSize = fontSize + 'px';
 }
 
-function f3() {
-    //function to make the text alignment left using DOM method
-    document.getElementById("textarea1").style.textAlign = "left";
+function changeFontWeight(fontWeight) {
+    editor.style.fontWeight = fontWeight;
 }
 
-function f4() {
-    //function to make the text alignment center using DOM method
-    document.getElementById("textarea1").style.textAlign = "center";
+function changeFontStyle(fontStyle) {
+    editor.style.fontStyle = fontStyle;
 }
 
-function f5() {
-    //function to make the text alignment right using DOM method
-    document.getElementById("textarea1").style.textAlign = "right";
+function changeBackgroundColor(color) {
+    editor.style.backgroundColor = color;
 }
 
-function f6() {
-    //function to make the text in Uppercase using DOM method
-    document.getElementById("textarea1").style.textTransform = "uppercase";
-}
-
-function f7() {
-    //function to make the text in Lowercase using DOM method
-    document.getElementById("textarea1").style.textTransform = "lowercase";
-}
-
-function f8() {
-    //function to make the text capitalize using DOM method
-    document.getElementById("textarea1").style.textTransform = "capitalize";
-}
-
-function f9() {
-    //function to make the text back to normal by removing all the methods applied
-    //using DOM method
-    document.getElementById("textarea1").style.fontWeight = "normal";
-    document.getElementById("textarea1").style.textAlign = "left";
-    document.getElementById("textarea1").style.fontStyle = "normal";
-    document.getElementById("textarea1").style.textTransform = "capitalize";
-    document.getElementById("textarea1").value = " ";
-}
-
-
-var editor = document.getElementById('textarea1');
 function save() {
     var img = document.createElement('img');
     img.src = 'data:image/svg+xml;base64,' + btoa(editor.value);
     document.body.appendChild(img);
 }
-

@@ -10,7 +10,6 @@
     <!-- 保存图片 -->
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <link rel="stylesheet" href="./index.css">
-    <script src="./imagesaveMOdel/styleChange.js"></script>
 </head>
 <!--Body start-->
 
@@ -20,22 +19,18 @@
         <div class=" flex-box">
             <div class="row">
                 <div class="col">
-                    <button type="button" onclick="f1()" class=" shadow-sm btn btn-outline-secondary"
-                        data-toggle="tooltip" data-placement="top" title="Bold Text">
-                        加粗</button>
-                    <button type="button" onclick="f5()" class="btn shadow-sm btn-outline-primary" data-toggle="tooltip"
-                        data-placement="top" title="Right Align">
-                        方向</button>
-                    <button type="button" onclick="f6()" class="btn shadow-sm btn-outline-secondary"
-                        data-toggle="tooltip" data-placement="top" title="Uppercase Text">
-                        大写</button>
-                    <button type="button" onclick="f7()" class="btn shadow-sm btn-outline-primary" data-toggle="tooltip"
-                        data-placement="top" title="Lowercase Text">
-                        小写</button>
+                    <button onclick="changeFontStyle('Arial')">Arial</button>
+                    <button onclick="changeFontStyle('Verdana')">Verdana</button>
+                    <button onclick="changeFontSize(14)">14</button>
+                    <button onclick="changeFontSize(16)">16</button>
+                    <button onclick="changeFontWeight('normal')">normal</button>
+                    <button onclick="changeFontWeight('bold')">bold</button>
+                    <button onclick="changeFontStyle('normal')">normal</button>
+                    <button onclick="changeFontStyle('italic')">italic</button>
+                    <button onclick="changeBackgroundColor('#FFFFFF')">white</button>
+                    <button onclick="changeBackgroundColor('#EFEFEF')">light gray</button>
+                    <button onclick="changeBackgroundColor('#CCCCCC')">gray</button>
                     <button onclick="save()">Save</button>
-                    <button type="button" onclick="f9()" class="btn shadow-sm btn-outline-primary side"
-                        data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                        清空</button>
                 </div>
             </div>
         </div>
@@ -45,7 +40,7 @@
             </div>
             <div class="col-md-6 col-sm-9">
                 <div class="flex-box">
-                    <textarea id="textarea1" class="input shadow inputset" name="name" rows="15" cols="100"
+                    <textarea id="editor" class="input shadow inputset" name="name" rows="15" cols="100"
                         placeholder="Your text here ">
 					</textarea>
                 </div>
@@ -56,5 +51,6 @@
         <h6 style="text-align:center;">Priyansh Jha 2021.and hurki revise in 2023.3.8</h6>
     </section>
 </body>
+<script src="./imagesaveMOdel/styleChange.js"></script>
 
 </html>
