@@ -47,3 +47,4 @@ function f9() {
     document.getElementById("textarea1").style.textTransform = "capitalize";
     document.getElementById("textarea1").value = " ";
 }
+

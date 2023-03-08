@@ -52,6 +52,8 @@ textarea {
 }
 
 .inputset {
-    background-image: "./image/300.jpg";
-    text-shadow: #888888;
+    background-image: url("./image/300.jpg");
+    text-shadow: yellow;
+    background-color: red;
+    background-size: cover;
 }
