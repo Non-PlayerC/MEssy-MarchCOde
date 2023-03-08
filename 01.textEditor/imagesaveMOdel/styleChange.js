@@ -48,3 +48,11 @@ function f9() {
     document.getElementById("textarea1").value = " ";
 }
 
+
+var editor = document.getElementById('textarea1');
+function save() {
+    var img = document.createElement('img');
+    img.src = 'data:image/svg+xml;base64,' + btoa(editor.value);
+    document.body.appendChild(img);
+}
+

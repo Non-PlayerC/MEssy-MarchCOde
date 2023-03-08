@@ -6,8 +6,10 @@
     <title>👻 文本编辑器</title>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/dom-to-image/dist/dom-to-image.min.js"></script>
+    <!-- 保存图片 -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <link rel="stylesheet" href="./index.css">
-    <script src="./imagesaveMOdel/styleChange.js"></script>
     <script src="./imagesaveMOdel/styleChange.js"></script>
 </head>
 <!--Body start-->
@@ -30,7 +32,7 @@
                     <button type="button" onclick="f7()" class="btn shadow-sm btn-outline-primary" data-toggle="tooltip"
                         data-placement="top" title="Lowercase Text">
                         小写</button>
-                    <button id="saveBtn" onclick="saveAsImage()">保存为图片</button>
+                    <button onclick="save()">Save</button>
                     <button type="button" onclick="f9()" class="btn shadow-sm btn-outline-primary side"
                         data-toggle="tooltip" data-placement="top" title="Tooltip on top">
                         清空</button>

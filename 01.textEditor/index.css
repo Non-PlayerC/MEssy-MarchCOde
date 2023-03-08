@@ -3,6 +3,7 @@ samp {
 }
 * {
     font-family: 'YouYuan';
+    background-image: url("./image/bk.jpg");
 }
 h1 {
     padding-top: 20px;
